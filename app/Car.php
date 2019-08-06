@@ -7,10 +7,12 @@ namespace Faker\Provider;
 use Faker\Generator;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Car extends Model
 {
 
 //make,model,year
+//made model for car
     public static function vehicleBrand() : string
     {
         return static::randomElement(array_keys(CarData::getBrandsWithModels()));
