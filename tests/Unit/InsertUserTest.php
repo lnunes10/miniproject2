@@ -16,7 +16,7 @@ class InsertUserTest extends TestCase
      */
     public function InsertUserTest()
     {
-        $user= new user;
+        $user= new user();
         $this->assertAuthenticatedAs(true);
     }
 }
